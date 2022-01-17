@@ -18,6 +18,8 @@ struct Product: Codable, Identifiable {
     var image: String
 }
 
+
+
 struct Address: Codable {
     var state: String = ""
     var city: String = ""
@@ -34,5 +36,41 @@ class Api {
             }
             
         }.resume()
+    }
+    
+    func getProductGroupByName (products: [Product]) -> Dictionary<String, [Product]> {
+        var groupByNameDict: [String: [Product]] = [:]
+        for product in products {
+            if groupByNameDict[product.product_name] != nil {
+                groupByNameDict[product.product_name]!.append(product)
+            } else {
+                groupByNameDict[product.product_name] = [product]
+            }
+        }
+        return groupByNameDict
+    }
+    
+    func convertStringToDate(strDate: String) -> Date {
+        var date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        date = dateFormatter.date(from: strDate)!
+        return date
+    }
+    
+    func getStates(products: [Product]) ->[String] {
+        var stateArr:[String] = []
+        for product in products {
+            stateArr.append(product.address.state)
+        }
+        return Array(Set(stateArr))
+    }
+    
+    func getCities(products: [Product]) ->[String] {
+        var cityArr:[String] = []
+        for product in products {
+            cityArr.append(product.address.city)
+        }
+        return Array(Set(cityArr))
     }
 }
