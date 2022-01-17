@@ -24,3 +24,5 @@ select state
 select city
 
 <img src="city.png" width="350" title="city">
+
+Todo: implement filter for state and city selection
