@@ -16,7 +16,6 @@
 		7900ABFE2792BA88006B8900 /* FigmaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900ABFD2792BA88006B8900 /* FigmaUITestsLaunchTests.swift */; };
 		7900AC0B2792C243006B8900 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900AC0A2792C243006B8900 /* Data.swift */; };
 		7900AC0D27953AD7006B8900 /* ProductSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900AC0C27953AD6006B8900 /* ProductSubView.swift */; };
-		7900AC112795756F006B8900 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900AC102795756F006B8900 /* FilterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +48,6 @@
 		7900ABFD2792BA88006B8900 /* FigmaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigmaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7900AC0A2792C243006B8900 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		7900AC0C27953AD6006B8900 /* ProductSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSubView.swift; sourceTree = "<group>"; };
-		7900AC102795756F006B8900 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +104,6 @@
 				7900AC0A2792C243006B8900 /* Data.swift */,
 				7900ABE42792BA88006B8900 /* Assets.xcassets */,
 				7900ABE62792BA88006B8900 /* Preview Content */,
-				7900AC102795756F006B8900 /* FilterView.swift */,
 			);
 			path = Figma;
 			sourceTree = "<group>";
@@ -269,7 +266,6 @@
 				7900ABE32792BA86006B8900 /* ContentView.swift in Sources */,
 				7900AC0D27953AD7006B8900 /* ProductSubView.swift in Sources */,
 				7900AC0B2792C243006B8900 /* Data.swift in Sources */,
-				7900AC112795756F006B8900 /* FilterView.swift in Sources */,
 				7900ABE12792BA86006B8900 /* FigmaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
